@@ -2,6 +2,18 @@
 //   Peace!
 //
 
+//=== 
+string Path = @"D:\MyDir";
+if (Directory.Exists(Path) == false)
+{
+    Directory.CreateDirectory(Path);
+}
+Console.WriteLine("資料夾建立時間: " + Directory.GetCreationTime(Path));
+Console.WriteLine("資料夾最後存取時間: " + Directory.GetLastAccessTime(Path));
+Console.WriteLine("資料夾的跟目錄: " + Directory.GetDirectoryRoot(Path));
+
+Console.ReadLine();
+
 //=== 如果目的地沒有資料夾，那就自己創一個吧
 string path = @"C:\testGO\testDirectory";
 if (!Directory.Exists(path))
