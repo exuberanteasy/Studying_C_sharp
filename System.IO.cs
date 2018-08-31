@@ -50,10 +50,25 @@ Console.ReadLine();
 //=================================[[ StreamWriter 類別的方法]]=====================================
 //== 使用 WriteLine() 加入第 X 行文字
 StreamWriter objWriter = new StreamWriter(@"D:\MyText.txt", true);
-            objWriter.WriteLine("這是使用WriteLine() 方法加入第一行文字");
-            objWriter.WriteLine();
-            objWriter.WriteLine("這是使用WriteLine() 方法加入第二行文字");
-            objWriter.WriteLine();
-            objWriter.WriteLine("這是使用WriteLine() 方法加入第三行文字");
-            objWriter.WriteLine();
-            objWriter.Close();
+objWriter.WriteLine("這是使用WriteLine() 方法加入第一行文字");
+objWriter.WriteLine();
+objWriter.WriteLine("這是使用WriteLine() 方法加入第二行文字");
+objWriter.WriteLine();
+objWriter.WriteLine("這是使用WriteLine() 方法加入第三行文字");
+objWriter.WriteLine();
+objWriter.Close();
+
+
+// 檔案會亂碼
+// 用 FileStream 物件讀取檔案的全部內容並顯示出來
+FileStream objFileStream = new FileStream(@"D:\Poetry3.txt", FileMode.Open, FileAccess.Read);
+byte[] MyByteArray = new byte[objFileStream.Length];
+string Content = "";
+objFileStream.Read(MyByteArray, 0, System.Convert.ToInt32(objFileStream.Length));
+foreach(byte MyByte in MyByteArray)
+{
+    Content = Content + System.Convert.ToChar(MyByte);
+}
+Console.Write(Content);
+objFileStream.Close();
+Console.ReadLine();
