@@ -32,3 +32,6 @@ Select * From 成績單 order by 中文 Desc, 數學 Desc
 
 --# 顯示 中文 前五筆 遞減排序
 Select Top 5 * From 成績單 Order By 中文 Desc
+
+--# 顯示 中文 前百分之五十筆 遞減排序
+Select Top 50 Percent * From 成績單 Order By 中文 Desc
