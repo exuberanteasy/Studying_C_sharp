@@ -47,7 +47,7 @@ foreach(string Name in Directory.GetFileSystemEntries(@"C:\windows", "b*"))
 }
 Console.ReadLine();
 
-//=================================[[ StreamWriter 類別的方法]]=====================================
+//=================================[[ StreamWriter 類別的方法 ]]=====================================
 //== 使用 WriteLine() 加入第 X 行文字
 StreamWriter objWriter = new StreamWriter(@"D:\MyText.txt", true);
 objWriter.WriteLine("這是使用WriteLine() 方法加入第一行文字");
