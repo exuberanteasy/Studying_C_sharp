@@ -2,6 +2,13 @@
 //   Peace!
 //
 
+//=== 如果目的地沒有資料夾，那就自己創一個吧
+string path = @"C:\testGO\testDirectory";
+if (!Directory.Exists(path))
+{
+    Directory.CreateDirectory(path);
+}
+
 
 //=== 取得電腦上的邏輯磁碟名稱
 foreach(string Name in Directory.GetLogicalDrives())
