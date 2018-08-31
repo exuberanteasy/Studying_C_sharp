@@ -4,8 +4,8 @@
 
 //=== 把檔案讀出來(存檔注意是要 Unicode 編碼)
 StreamReader objReader = new StreamReader(@"D:\Poetry1.txt", System.Text.Encoding.Unicode);
-string MyLine = objReader.ReadLine();
-while (MyLine != null)
+string MyLine = objReader.ReadLine();          //從檔案指標的位置讀取一行
+while (MyLine != null)                         //檢查是否碰到檔案結尾
 {
     Console.WriteLine(MyLine);
     MyLine = objReader.ReadLine();
