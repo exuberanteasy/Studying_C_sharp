@@ -20,3 +20,9 @@ select * From 成績單 where 中文 in(80,85,88) -- Oh yeah!!
 
 --# 80 ~ 90 之間!
 select * from 成績單 where 數學 between 80 and 90
+
+--# 由低到高排序
+select *from 成績單 order by 中文 Asc
+
+--# 由高到低排序
+select *from 成績單 order by 中文 Desc
