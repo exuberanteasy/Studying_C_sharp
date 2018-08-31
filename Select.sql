@@ -26,3 +26,6 @@ select *from 成績單 order by 中文 Asc
 
 --# 由高到低排序
 select *from 成績單 order by 中文 Desc
+
+--# 先依照 中文 遞減排序，再依照 數學 遞減排序
+Select * From 成績單 order by 中文 Desc, 數學 Desc
