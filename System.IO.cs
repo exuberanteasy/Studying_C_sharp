@@ -2,6 +2,18 @@
 //   Peace!
 //
 
+//=== 把檔案讀出來(存檔注意是要 Unicode 編碼)
+StreamReader objReader = new StreamReader(@"D:\Poetry1.txt", System.Text.Encoding.Unicode);
+string MyLine = objReader.ReadLine();
+while (MyLine != null)
+{
+    Console.WriteLine(MyLine);
+    MyLine = objReader.ReadLine();
+}
+objReader.Close();
+Console.ReadLine();
+
+
 //=== 
 string Path = @"D:\MyDir";
 if (Directory.Exists(Path) == false)
