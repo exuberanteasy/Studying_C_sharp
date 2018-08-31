@@ -35,3 +35,7 @@ Select Top 5 * From 成績單 Order By 中文 Desc
 
 --# 顯示 中文 前百分之五十筆 遞減排序
 Select Top 50 Percent * From 成績單 Order By 中文 Desc
+
+--# 前6筆 遞減排序
+Select Top 6 學號, 姓名, 中文, 數學, English, 中文 + 數學 + english As 期中考總分
+From 成績單 Order By 期中考總分 Desc
