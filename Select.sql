@@ -18,5 +18,5 @@ select * from 成績單 where 數學 is Null And 中文 is not null --# 一樣�
 
 select * From 成績單 where 中文 in(80,85,88) -- Oh yeah!!
 
-// 80 ~ 90 之間!
+--# 80 ~ 90 之間!
 select * from 成績單 where 數學 between 80 and 90
