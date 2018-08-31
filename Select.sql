@@ -29,3 +29,6 @@ select *from 成績單 order by 中文 Desc
 
 --# 先依照 中文 遞減排序，再依照 數學 遞減排序
 Select * From 成績單 order by 中文 Desc, 數學 Desc
+
+--# 顯示 中文 前五筆 遞減排序
+Select Top 5 * From 成績單 Order By 中文 Desc
