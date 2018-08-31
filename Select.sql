@@ -13,3 +13,7 @@ select * from 成績單 Where 姓名 Like '_小美' --# 一樣查不到 ??
 select * from 成績單 Where 姓名 Like '[a-f]ean' --# 一樣查不到 ??
 
 select * from 成績單 Where SUBSTRING(姓名, 1, 1)='林' --# 一樣查不到 ??
+
+select * from 成績單 where 數學 is Null And 中文 is not null --# 一樣查不到 ??
+
+select * From 成績單 where 中文 in(80,85,88) -- Oh yeah!!
