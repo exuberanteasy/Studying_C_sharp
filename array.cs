@@ -21,3 +21,4 @@ Public Property(公有屬性)
 
 Public Method(公有方法)
 ╠ BinarySearch(arr,obj)  //使用二元搜尋法在 arr 陣列內搜尋 obj 所在位置的索引，傳回值為 int 型別。
+╠ Clone()  //建立目前陣列的拷貝，傳回值為 object 型別
