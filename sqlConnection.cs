@@ -1,3 +1,5 @@
+using System.Data.SqlClient;  //記得加上這一行
+
 private void Form1_Load(object sender, EventArgs e)
 {
     sqlConnection1.Open();  //開啟資料連接
