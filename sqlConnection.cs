@@ -14,4 +14,8 @@ private void Form1_Load(object sender, EventArgs e)
     sqlConnection1.Close();  //關閉資料連接
 }
 
-
+//==================================================
+SELECT  學號, 姓名, 中文, 數學, English
+FROM     成績單
+WHERE   (中文 > 90)
+//==================================================
