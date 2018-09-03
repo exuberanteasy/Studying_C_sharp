@@ -34,6 +34,7 @@ static variable
 constant
 
 //============================================
+//存取案例變數
 namespace TestProj_1
 {
     class Circle
