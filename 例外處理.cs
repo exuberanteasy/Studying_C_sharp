@@ -18,3 +18,32 @@ Visual C#的例外均繼承自 System.Exception 類別，同時 System 命名空
 
 //=======================================================
 結構化例外處理
+
+
+namespace MyProj6_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.IO.StreamWriter file = null;
+            try
+            {
+                file = new System.IO.StreamWriter(@"C:\file1.txt");
+                file.WriteLine("Hello, world!");
+            }
+            catch(UnauthorizedAccessException e1)
+            {
+                System.Console.WriteLine("捕捉到UnauthorizeAccessException例外，錯誤訊息為 " + e1.Message);
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+
+            }
+        }
+    }
+}
