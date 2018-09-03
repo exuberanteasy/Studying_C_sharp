@@ -18,4 +18,10 @@ private void Form1_Load(object sender, EventArgs e)
 SELECT  學號, 姓名, 中文, 數學, English
 FROM     成績單
 WHERE   (中文 > 90)
-//==================================================
+    
+//=========================================================
+//DataSet 物件與控制項的整合運用
+private void Form1_Load(object sender, EventArgs e)
+{
+    sqlDataAdapter1.Fill(dataSet11);
+}
