@@ -30,3 +30,26 @@ private void Form1_Load(object sender, EventArgs e)
 => 由於 DataSet 物件會記錄欄位結構，因此，若您修改過 SqlDataAdapter 物件的 SelectCommand 屬性鎖鑰執行的
 Select 陳述式(該陳述式決定了要取得哪些欄位)，請記得刪除原來的 DataSet 物件，重新產生一個 DataSet 物件
 => 任何有 DataSource 屬性的控制項都可以與資料庫整合運用，例如 ComboBox、ListBox、CheckedListBox、DataGridView 等。
+
+//呼叫 sqlDataAdapter 物件的 Fill()方法 將資料放入 DataSet 物件
+private void MyProj11_3_Load(object sender, EventArgs e)
+{
+    sqlDataAdapter1.Fill(dataSet11);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
