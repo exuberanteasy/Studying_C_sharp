@@ -6,8 +6,12 @@ private void Form1_Load(object sender, EventArgs e)
     SqlDataReader sqlDataReader1 = sqlCommand1.ExecuteReader(); // 建立 SqlDataReader 物件
     while (sqlDataReader1.Read())  // 顯示查詢結果中的學生姓名
     {
-        comboBox1.Items.Add(sqlDataReader1.GetString(1));
+        comboBox1.Items.Add(sqlDataReader1.GetString(1)); //單選
+        
+        checkedListBox1.Items.Add(sqlDataReader1.GetString(1)); //複選
     }
     sqlDataReader1.Close();  //關閉 SqlDataReader 物件
     sqlConnection1.Close();  //關閉資料連接
 }
+
+
