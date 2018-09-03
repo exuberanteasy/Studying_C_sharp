@@ -89,7 +89,42 @@ namespace TestProj_2
    參考型別 的 唯讀變數 初始值為 0，參考型別 的 唯讀變數 初始化值為 null 。
 
 
+//=====================================================
+//宣告方法
+namespace TestProj_3
+{
+    class Circle
+    {
+        public int radius;                   
+        public const float PI = 3.14F;       
+        public static int count;             
 
+        // 靜態方法
+        public static void showPI()
+        {
+            Console.WriteLine(PI);
+        }
+
+        // 案例方法
+        public void showArea(int r)
+        {
+            radius = r;
+            Console.WriteLine(PI * radius * radius);
+        }
+    }
+   
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Circle c1 = new Circle(); 
+            Circle.showPI();            //透過類別的名稱呼叫靜態方法
+            c1.showArea(10);            //透過物件呼叫案例方法
+
+            Console.ReadLine();
+        }
+    }
+}
 
 
 
