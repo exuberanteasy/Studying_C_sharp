@@ -1,6 +1,6 @@
-instance property
+instance property(案例屬性)
 
-static property
+static property(靜態屬性)
 
 //==================================================
 namespace MyProj_1
