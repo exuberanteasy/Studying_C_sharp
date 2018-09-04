@@ -8,3 +8,7 @@
 ※ 我決定了，從今天起 ，我要選擇一條不會讓自己後悔的路。 我要創造出屬於自己的忍道！
 
 ※ The rest of the world may follow the rules, but I must follow my heart!
+  
+※ No one ever made a difference by being like everyone else.
+
+※ Don’t listen to them. They don’t understand you, but they will.
