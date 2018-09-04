@@ -22,3 +22,7 @@ Step 3:使用 Command 物件的 ExecuteNonQuery方法執行 SQL語法，使多�
 Step 4: 執行全部資料庫操作工作後，若沒有發生錯誤，可以使用 Transaction 物件的 Commit方法來認可此交易，
         此時即將所有 Command物件所指定的資料庫操作工作寫入資料庫中。寫法如下:
   tran.Commit();
+
+Step 5: 若發生錯誤，即執行 Transaction物件的 Rollback方法來回復交易，使資料庫內容回復到執行交易之前的狀態
+  
+ 
