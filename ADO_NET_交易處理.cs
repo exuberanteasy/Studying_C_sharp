@@ -26,3 +26,4 @@ Step 4: 執行全部資料庫操作工作後，若沒有發生錯誤，可以使
 Step 5: 若發生錯誤，即執行 Transaction物件的 Rollback方法來回復交易，使資料庫內容回復到執行交易之前的狀態
   
  
+TransactionDemo1.sln => 另外做一個連接
