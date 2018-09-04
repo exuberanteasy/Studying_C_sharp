@@ -18,3 +18,5 @@ Step 3:使用 Command 物件的 ExecuteNonQuery方法執行 SQL語法，使多�
   cmd1.ExecuteNonQuery();
   cmd2.ExecuteNonQuery();
   cmdN.ExecuteNonQuery();
+
+Step 4:
