@@ -27,3 +27,4 @@ Step 5: 若發生錯誤，即執行 Transaction物件的 Rollback方法來回復
   
  
 TransactionDemo1.sln => 另外做一個連接
+P.17-37
